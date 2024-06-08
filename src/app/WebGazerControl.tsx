@@ -16,7 +16,7 @@ export default function WebGazerControl() {
       webgazer
         .setRegression("ridge")
           .setGazeListener((data: any, elapsedTime: number) => {
-            console.log(data, elapsedTime);
+            console.log(elapsedTime);
           if (data == null) {
             console.log("No gaze data received");
             return;
